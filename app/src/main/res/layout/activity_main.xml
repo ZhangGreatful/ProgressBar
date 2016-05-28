@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res/com.example.administrator.progressbar"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.progressbar.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.administrator.progressbar.com.progressBar.view.HorizontalProgressBarWithProgress
+            android:id="@+id/id_progress01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#44ff0000"
+            android:padding="15dp"
+            android:progress="50"/>
+
+        <com.example.administrator.progressbar.com.progressBar.view.HorizontalProgressBarWithProgress
+            android:id="@+id/id_progress02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="50"
+            hyman:progress_text_color="#f9df1818"
+            hyman:progress_unreach_color="#eee"/>
+
+        <com.example.administrator.progressbar.com.progressBar.view.HorizontalProgressBarWithProgress
+            android:id="@+id/id_progress_03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:progress="0"
+            hyman:progress_text_color="#f90e0e0e"
+            hyman:progress_unreach_color="#f90e0e0e"/>
+        <com.example.administrator.progressbar.com.progressBar.view.RoundProgressBarWithProgress
+            android:id="@+id/id_progress04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            hyman:radius="60dp"
+            android:padding="15dp"
+            android:progress="50"
+            hyman:progress_text_color="#f9df1818"
+            hyman:progress_unreach_color="#eee"/>
+    </LinearLayout>
+</ScrollView>
